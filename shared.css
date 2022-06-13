@@ -5,7 +5,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background-color: #F1FAEE;
+    background-color: #ffffff;
 }
 
 main {
@@ -16,25 +16,26 @@ main {
 .button {
     font-family: inherit;
     font-weight: bold;
-    background-color: #E63946;
-    color: #F1FAEE;
+    background-color: #1a73e8;
+    color: white;
     padding: 0.5rem;
-    border: 2px solid#E63946;
+    border: none;
     border-radius: 8px;
     outline: none;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); */
 }
 
 .button:hover {
-    background-color: #F1FAEE;
-    color: #E63946;
+    background-color: #1a65c7;
+    color: white;
     font-weight: bold;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* =============Navigation bar========== */
 
 .main-header {
-    background-color: #1D3557;
+    background-color: #4285F4;
     width: 100%;
     padding: 0 1rem;
     position: fixed;
@@ -65,9 +66,8 @@ main {
     /* position: relative; */
     height: 100%;
     /* top: -0.3125rem; */
-    border: 2px solid #457B9D;
-    border-radius: 40%;
-    box-shadow: 0px 0px 10px rgba(168, 218, 220, 0.5);
+    /* border: 2px solid #0944a3; */
+    /* text-shadow: 0px 0px 10px rgba(168, 218, 220, 0.5); */
 }
 
 .main-header a {
@@ -89,7 +89,7 @@ main {
 .main-nav__item a,
 .mobile-nav__item a {
     text-decoration: none;
-    color: #F1FAEE;
+    color: white;
     font-weight: bold;
     padding: 0.1875rem 0;
 }
@@ -104,14 +104,14 @@ main {
 .main-nav__item a:active,
 .mobile-nav__item a:hover,
 .mobile-nav__item a:active{
-    color: #E63946;
-    border-bottom: 5px solid #E63946;
+    /* color: #d6edff; */
+    border-bottom: 5px solid white;
 }
 
 .main-nav__item--cta a,
 .mobile-nav__item--cta a {
-    background-color: #E63946;
-    color: #F1FAEE;
+    background-color: #0b5ac2;
+    color: white;
     border-radius: 8px;
     padding: 0.5rem 1rem;
 }
@@ -120,14 +120,16 @@ main {
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
 .mobile-nav__item--cta a:active{
-    color: #E63946;
-    background-color: #F1FAEE;
+    color: white;
+    background-color: #1a54a1;
     border: none;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
 /* ============Toggle============ */
 
 .toggle-button {
+    border-radius: 50%;
     width: 3rem;
     background: transparent;
     border: none;
@@ -149,7 +151,11 @@ main {
     background: #F1FAEE;
     display: block;
     margin: 0.6rem 0;
-  }  
+  } 
+  
+  .toggle-button:hover{
+    background-color: rgba(245, 248, 254, 0.2);
+  }
 
 /* ========Mobile Nav========= */
 
@@ -159,7 +165,7 @@ main {
     z-index: 101;
     top: 0;
     left: 0;
-    background: #1D3557;
+    background: #06347e;
     width: 80%;
     height: 100vh;
   }
@@ -184,7 +190,7 @@ main {
 /* =============Footer========== */
 
 .main-footer {
-    background: #1D3557;
+    background: #f0f0f0;
     padding: 2rem;
     margin-top: 3rem;
   }
@@ -202,13 +208,13 @@ main {
   }
   
   .main-footer__link a {
-    color: #F1FAEE;
+    color: rgba(61,61,61,.8);
     text-decoration: none;
   }
 
 .main-footer__link a:hover,
 .main-footer__link a:active{
-    color: #E63946;
+    color: #4285F4;
 }
 
 /* ========Backdrop========= */
@@ -250,5 +256,3 @@ main {
         padding: 0.5rem 1rem;
     }
 }
-
-/* https://coolors.co/e63946-f1faee-a8dadc-457b9d-1d3557 */

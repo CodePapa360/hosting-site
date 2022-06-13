@@ -25,7 +25,7 @@ main {
 .testimonial__image {
     width: 95%;
     vertical-align: top;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
 }
 
@@ -53,14 +53,14 @@ main {
 
   .testimonial__name {
     font-size: 2rem;
-    color: #E63946; 
+    color: #4285F4; 
   }
   
   .testimonial__subtitle {
       font-size: 1.25rem;
       margin: 0;
       padding: 0;
-      color: #457B9D;
+      color: #0b5ac2;
   }
 
   .testimonial__text {
