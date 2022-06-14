@@ -43,6 +43,10 @@ main {
 
 /* =============Navigation bar========== */
 
+#first-container{
+    width: 100%;
+}
+
 .main-header {
     background-color: #4285F4;
     width: 100%;
@@ -65,10 +69,11 @@ main {
     /* font-weight: bold; */
     text-decoration: none;
     vertical-align: middle;
-    display: inline-block;
+    /* display: inline-block; */
     /* width: 1.875rem; */
     height: 3rem;
     /* position: relative; */
+    float: right;
 }
 
 .main-header__brand img {
@@ -289,5 +294,8 @@ main {
     .main-nav__item {
         display: inline-block;
         margin-left: 1.25rem;
+    }
+    #first-container{
+        width: unset;
     }
 }
