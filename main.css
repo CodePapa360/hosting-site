@@ -13,14 +13,14 @@
 
 #product-overview h1 {
     color: #4285F4;
-    font-size: 5vw;
-    font-weight: 100;
+    font-size: 6vw;
+    font-weight: 300;
     position: absolute;
     inset: 0;
     margin: auto;
     height: fit-content;
     width: fit-content;
-    text-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.3);
+    text-shadow: 0px 0px 5px hsla(0, 0%, 0%, 0.8);
 }
 
 .section-title {
@@ -120,11 +120,11 @@
 .modal {
     z-index: 200;
     position: fixed;
-    background-color: #F1FAEE;
+    background-color: white;
     border-radius: 8px;
     inset: 20% 0 auto 0;
     margin: auto;
-    max-width: 40rem;
+    max-width: 30rem;
     /* top: 20%; */
     /* left: 30%; */
     /* width: 40%; */
@@ -138,6 +138,7 @@
     text-align: center;
     margin: 0 0 1rem 0;
     font-size: 1.5rem;
+    color: black;
 }
 
 .modal__actions {
@@ -145,7 +146,7 @@
 }
 
 .modal__action{
-    background-color: #00691a;
+    background-color: #0F9D58;
     border: none;
     text-decoration: none;
     color: white;
@@ -157,17 +158,17 @@
 }
 
 .modal__action--negative {
-    background-color: rgb(211, 0, 0);
+    background-color: #DB4437;
 }
 
 .modal__action:hover,
 .modal__action:active{
-    background-color: #00be30;
+    background-color: #14cc73;
 }
 
 .modal__action--negative:hover,
 .modal__action--negative:active{
-    background-color: rgb(255, 45, 45);
+    background-color: #f07b70;
 }
 
 @media (min-width: 40rem) {

@@ -1,0 +1,96 @@
+main {
+    padding-top: 1rem;
+}
+
+.signup-title{
+text-align: center;
+font-size: 1.5rem;
+color: #4285F4;
+padding: 0 .2rem 1rem;
+}
+
+.signup-form {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    max-width: 25rem;
+    width: 95%;
+    margin: auto;
+}
+
+.signup-form label{
+    font-weight: bold;
+}
+
+.signup-form label,
+.signup-form input,
+.signup-form select{
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* .signup-form input[type="checkbox"]{
+
+} */
+.signup-form input[id*="terms"],
+.signup-form input[id*="terms"] + label{
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.signup-form input:not([type="checkbox"]),
+.signup-form select{
+    border: 2px solid #ebebeb;
+    padding: .5rem 0.5rem;
+    font: inherit;
+    border-radius: 4px;
+}
+
+.signup-form input:not([type="checkbox"]):focus,
+.signup-form select:focus{
+    background-color: rgba(66, 134, 244, 0.1);
+    outline: none;
+    border-color:#4285F4;
+}
+
+.signup-form input[type="checkbox"]{
+    border: 2px solid rgb(0, 153, 255);
+    border-radius: 50%;
+    background: rgb(245, 250, 253);
+    width: 1rem;
+    height: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.signup-form input[type="checkbox"]:checked{
+    border-color: #003b99;
+    background-color:#4285F4;
+}
+
+/* .signup-form input:invalid,
+.signup-form select:invalid{
+    border-color: #DB4437;
+    background-color: rgba(219, 69, 55, 0.176);
+} */
+
+.signup-form button[type="submit"]{
+    display: block;
+    margin: 1rem auto;
+}
+
+/* 
+@media (min-width: 40rem){
+    .signup-form{
+        margin: auto;
+        width: 25rem;
+    }
+} */
+
+.signup-form label[for="agree-terms"] a{
+    text-decoration: none;
+    color: #4285F4;
+}
