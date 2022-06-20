@@ -2,22 +2,14 @@ main {
     padding-top: 2rem;
 }
 
-
-.wrapper {
-  max-width: 75rem;
-  margin: auto;
-}
-
 .testimonial {
     font-size: 1.25rem;
     margin: 1rem auto 3rem;
   }          
 
 .testimonial__image-container {
-    /* width: 66%; */
     width: 100%;
     max-width: 40rem;
-    /* display: inline-block; */
     vertical-align: middle;
     text-align: center;
 }
@@ -68,6 +60,13 @@ main {
   }
 
   @media (min-width: 40rem) {
+    .testimonial{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1500px;
+        margin: 3rem auto;
+    }
     .testimonial__info {
         width: 30%;
         display: inline-block;
@@ -75,7 +74,5 @@ main {
      }
      .testimonial__image-container {
       width: 61%;
-      display: inline-block;
-      vertical-align: middle;
      }
   }
