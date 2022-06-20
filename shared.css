@@ -2,16 +2,24 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 3rem auto fit-content(4.55rem) ;
+    /* padding-top: 3rem; */
+    height: 100%;
 }
 
 main {
-    min-height: calc(100vh - 3.5rem - 4.55rem);
-    margin-top: 3rem;
+    /* min-height: calc(100vh - 3.5rem - 4.55rem); */
+    /* margin-top: 3rem; */
     cursor: default;
+    grid-row: 2 / 3;
 }
 
 .button {
@@ -45,6 +53,8 @@ main {
 
 #first-container{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-header {
@@ -55,34 +65,23 @@ main {
     top: 0;
     z-index: 1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.main-header > div {
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .main-header__brand {
-    /* color: #c20051; */
-    /* font-size: 1.875rem; */
-
-    /* font-weight: bold; */
     text-decoration: none;
     vertical-align: middle;
-    /* display: inline-block; */
-    /* width: 1.875rem; */
     height: 3rem;
-    /* position: relative; */
-    float: right;
+    outline: none;
 }
 
 .main-header__brand img {
-    /* position: relative; */
-    height: 100%;
-    /* top: -0.3125rem; */
+    outline: none;
+    height: 3rem;
     border: 4px solid #607a8f;
     border-radius: 50%;
-    /* text-shadow: 0px 0px 10px rgba(168, 218, 220, 0.5); */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -92,9 +91,8 @@ main {
 }
 
 .main-nav {
-    width: calc(100% - 6.125rem);
+    /* width: calc(100% - 6.125rem); */
     display: none;
-    text-align: right;
 }
 
 .main-nav__item a,
@@ -109,13 +107,14 @@ main {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    
 }
 
 .main-nav__item a:hover,
 .main-nav__item a:active,
 .mobile-nav__item a:hover,
 .mobile-nav__item a:active{
-    /* color: #d6edff; */
     border-bottom: 5px solid white;
 }
 
@@ -146,16 +145,15 @@ main {
     border: none;
     cursor: pointer;
     padding: 0 .5rem;
-    /* padding-top: 0;
-    padding-bottom: 0; */
     vertical-align: middle;
     margin-right: 1rem;
+    outline: none;
   }
   
   .toggle-button__bar {
     width: 100%;
     height: 0.2rem;
-    background: #F1FAEE;
+    background: #000000;
     display: block;
     margin: 0.6rem 0;
   } 
@@ -180,16 +178,19 @@ main {
   }
   
   .mobile-nav__items {
-    width: 90%;
+    width: 100%;
     height: 100%;
     list-style: none;
-    margin: 10% auto;
+    margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .mobile-nav__item {
-    margin: 2rem auto;
+    margin: 1rem 0;
   }
   
   .mobile-nav__item a {
@@ -202,19 +203,21 @@ main {
     background: #f0f0f0;
     padding: 2rem;
     margin-top: 3rem;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-row: 3 / 4;
   }
   
   .main-footer__links {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
   }
   
   .main-footer__link {
-    display: block;
     margin: 1rem 0;
+    text-align: center;
   }
   
   .main-footer__link a {
@@ -230,19 +233,16 @@ main {
 /* ===============GitHub============== */
 
 #main-footer__github{
-    background-color: #ac00e0;
-    padding: 0.5rem 1rem;
-    margin: 0;
     position: absolute;
-    top: 50%;
-    right: 20px;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    height: fit-content;
-    width: fit-content;
-    border-radius: 30px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    right: 10px;
     text-align: center;
+    background-color: #ac00e0;
+    border-radius: 30px;
+    padding: 0.5rem  1rem;
+    border: none;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer;
 }
 
 #main-footer__github a{
@@ -273,7 +273,9 @@ main {
     display: block !important;
 }
 
-
+.active a{
+    border-bottom: 5px solid white;
+}
 
 @media (min-width: 40rem) {
     .toggle-button {
@@ -288,11 +290,10 @@ main {
     }
 
     .main-nav{
-        display: inline-block;
+        display: flex;
     }
 
     .main-nav__item {
-        display: inline-block;
         margin-left: 1.25rem;
     }
     #first-container{
